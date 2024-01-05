@@ -1,4 +1,5 @@
-import { useAppSelector } from "../../hooks/redux";
+import React from "react";
+import { useAppSelector } from "../../hooks/redux.ts";
 import CartEmpty from "../../components/cart-empty/CartEmpty";
 import CartList from "./cart-list/CartList";
 import Checkout from "./checkout/Checkout";
