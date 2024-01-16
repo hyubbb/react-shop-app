@@ -17,6 +17,18 @@ const CardSkeleton = () => {
       <div className={styles.card_skeleton}>
         <Skeleton height={350} />
       </div>
+      <div className={styles.card_skeleton}>
+        <Skeleton height={350} />
+      </div>
+      <div className={styles.card_skeleton}>
+        <Skeleton height={350} />
+      </div>
+      <div className={styles.card_skeleton}>
+        <Skeleton height={350} />
+      </div>
+      <div className={styles.card_skeleton}>
+        <Skeleton height={350} />
+      </div>
     </div>
   );
 };

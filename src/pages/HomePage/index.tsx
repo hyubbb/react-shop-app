@@ -6,9 +6,9 @@ import CountProducts from "./count-products/CountProducts";
 const HomePage = () => {
   return (
     <div className='page'>
+      <FiltersCategory />
       <div className='container'>
-        <h1>Products</h1>
-        <FiltersCategory />
+        {/* <h1>Products</h1> */}
         <CountProducts />
         <CardList />
       </div>

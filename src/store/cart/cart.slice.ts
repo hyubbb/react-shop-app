@@ -5,6 +5,7 @@ import { IProduct } from "../products/product.type";
 export const postOrder = createAsyncThunk(
   "cart/postOrder",
   async (order: CartType, thunkAPI) => {
+    console.log(order);
     try {
       const response = await axios.post(
         "https://6596d32f6bb4ec36ca0369e0.mockapi.io/orders",

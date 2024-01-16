@@ -21,7 +21,7 @@ const CategoryTab: FC<CategoryTabProps> = ({
   };
 
   return (
-    <button
+    <div
       className={
         categoryName === category
           ? styles.active_category
@@ -30,7 +30,7 @@ const CategoryTab: FC<CategoryTabProps> = ({
       onClick={getActiveCategory}
     >
       {text}
-    </button>
+    </div>
   );
 };
 

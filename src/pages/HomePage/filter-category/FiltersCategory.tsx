@@ -5,20 +5,17 @@ import { CategoriesName } from "../../../store/categories/categories.type";
 
 const FiltersCategory = () => {
   return (
-    <div className={styles.FiltersCategory}>
-      <CategoryTab text={"모두"} categoryName={CategoriesName.All} />
+    <div className={styles.filter_category}>
+      <CategoryTab text={"All"} categoryName={CategoriesName.All} />
+      <CategoryTab text={"Mens"} categoryName={CategoriesName.MensClothing} />
       <CategoryTab
-        text={"전자기기"}
-        categoryName={CategoriesName.Electronics}
-      />
-      <CategoryTab text={"쥬얼리"} categoryName={CategoriesName.Jewelry} />
-      <CategoryTab
-        text={"남성의류"}
-        categoryName={CategoriesName.MensClothing}
-      />
-      <CategoryTab
-        text={"여성의류"}
+        text={"Womens"}
         categoryName={CategoriesName.WomensClothing}
+      />
+      <CategoryTab text={"Jewelry"} categoryName={CategoriesName.Jewelry} />
+      <CategoryTab
+        text={"Electronics"}
+        categoryName={CategoriesName.Electronics}
       />
     </div>
   );

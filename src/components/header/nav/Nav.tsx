@@ -47,9 +47,15 @@ const Nav = () => {
         </li>
         <li>
           <div className='styles.counter'>
-            <Link to={"/order"}>
-              <FiUser title='order' />
-            </Link>
+            {isAuth ? (
+              <Link to={"/order"}>
+                <FiUser title='order' />
+              </Link>
+            ) : (
+              <Link to={"/login"}>
+                <FiUser title='order' />
+              </Link>
+            )}
           </div>
         </li>
         <li>

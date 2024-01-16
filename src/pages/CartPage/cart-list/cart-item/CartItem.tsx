@@ -30,7 +30,7 @@ const CartItem: FC<cartItemType> = ({ item }) => {
 
   return (
     <div className={styles.cart_item}>
-      <Link to={`/card/${item.id}`}>
+      <Link to={`/product/${item.id}`}>
         <img src={item.image} alt='product card' />
       </Link>
       <div className={styles.cart_description}>

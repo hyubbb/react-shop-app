@@ -17,7 +17,7 @@ const OrdersList = () => {
   }, [dispatch, id]);
 
   if (!order.length) {
-    return <CartEmpty title={""} />;
+    return <CartEmpty title='주문 내역' />;
   }
 
   return (

@@ -12,6 +12,7 @@ const Checkout = () => {
   const user = useAppSelector((state) => state.userSlice);
   const dispatch = useAppDispatch();
   const { isAuth } = useAuth();
+  console.log(isAuth);
   useEffect(() => {
     dispatch(getTotalPrice());
   }, [dispatch]);
@@ -28,13 +29,12 @@ const Checkout = () => {
         </p>
 
         {isAuth ? (
-          <Link
+          <button
             className={styles.checkout_button}
-            to='/login'
             onClick={() => sendOrder()}
           >
             계산하기
-          </Link>
+          </button>
         ) : (
           <Link className={styles.checkout_button} to='/login'>
             로그인

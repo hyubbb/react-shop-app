@@ -24,7 +24,7 @@ const NavCartItem: FC<navCartItemType> = ({ item }) => {
         <h3>{item.category}</h3>
         <h2>{item.title}</h2>
         <span>
-          {item.price} x {item.quantity} = $ {item.total.toFixed(2)}
+          {item.price} x {item.quantity} = ${item.total.toFixed(2)}
         </span>
       </div>
       <button className={styles.nav_cart_delete} onClick={deleteProduct}>
